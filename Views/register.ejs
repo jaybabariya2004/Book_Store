@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="mx-auto px-4 py-8">
+      <h1 class="text-2xl font-semibold mb-4">Register</h1>
+      <form action="/v1/user/register" method="post">
+        <div class="mb-4 center">
+          <label for="userName" class="block">Username:</label>
+          <input
+            type="text"
+            id="userName"
+            name="userName"
+            class="border rounded-md px-4 py-2 w-full"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label for="Email" class="block">Email:</label>
+          <input
+            type="Email"
+            id="Email"
+            name="Email"
+            class="border rounded-md px-4 py-2 w-full"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label for="password" class="block">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="border rounded-md px-4 py-2 w-full"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label for="age" class="block">Age:</label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+            class="border rounded-md px-4 py-2 w-full"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label for="mobile" class="block">Mobile:</label>
+          <input
+            type="tel"
+            id="mobile"
+            name="mobile"
+            class="border rounded-md px-4 py-2 w-full"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label for="gender" class="block">Gender:</label>
+          <input
+            type="text"
+            id="gender"
+            name="gender"
+            class="border rounded-md px-4 py-2 w-full"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label for="city" class="block">City:</label>
+          <input
+            type="text"
+            id="city"
+            name="city"
+            class="border rounded-md px-4 py-2 w-full"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label for="country" class="block">Country:</label>
+          <input
+            type="text"
+            id="country"
+            name="country"
+            class="border rounded-md px-4 py-2 w-full"
+            required
+          />
+        </div>
+        <button
+          type="submit"
+          class="bg-blue-500 text-white px-4 py-2 rounded-md"
+        >
+          Register
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
